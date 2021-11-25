@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: try-batching
+  kafka:
+    consumer:
+      group-id: ${spring.application.name}
+      auto-offset-reset: earliest
+logging:
+  level:
+    # keep the logs quieter for demo purposes
+    org.apache.kafka: warn
